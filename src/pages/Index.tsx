@@ -26,13 +26,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-midsummer-light via-background to-midsummer-light/50 relative overflow-hidden">
-      {/* Flying Bees */}
-      <FlyingBee className="top-20 left-10" animationDuration="10s" delay="0s" />
-      <FlyingBee className="top-40 right-20" animationDuration="14s" delay="2s" size="text-xl" />
-      <FlyingBee className="top-96 left-1/3" animationDuration="12s" delay="4s" />
-      <FlyingBee className="top-[500px] right-1/4" animationDuration="16s" delay="1s" size="text-lg" />
-      <FlyingBee className="bottom-96 left-20" animationDuration="11s" delay="6s" />
-      <FlyingBee className="bottom-40 right-10" animationDuration="13s" delay="3s" size="text-2xl" />
+      {/* Flying Bees - Now truly flying around the screen! */}
+      <FlyingBee animationType="fly-around" delay="0s" size="text-2xl" />
+      <FlyingBee animationType="fly-zigzag" delay="3s" size="text-xl" />
+      <FlyingBee animationType="fly-diagonal" delay="6s" size="text-lg" />
+      <FlyingBee animationType="fly-circular" delay="2s" size="text-2xl" />
+      <FlyingBee animationType="fly-random" delay="8s" size="text-xl" />
+      <FlyingBee animationType="fly-around" delay="12s" size="text-lg" />
+      <FlyingBee animationType="fly-zigzag" delay="5s" size="text-2xl" />
+      <FlyingBee animationType="fly-diagonal" delay="10s" size="text-xl" />
       
       <Header />
       

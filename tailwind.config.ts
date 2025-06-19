@@ -104,19 +104,46 @@ export default {
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
 				'fly-around': {
-					'0%': { transform: 'translate(0, 0) rotate(0deg)' },
-					'25%': { transform: 'translate(100px, -50px) rotate(90deg)' },
-					'50%': { transform: 'translate(200px, 20px) rotate(180deg)' },
-					'75%': { transform: 'translate(50px, 80px) rotate(270deg)' },
-					'100%': { transform: 'translate(0, 0) rotate(360deg)' }
+					'0%': { transform: 'translate(0vw, 20vh) rotate(0deg)' },
+					'15%': { transform: 'translate(20vw, 10vh) rotate(45deg)' },
+					'30%': { transform: 'translate(80vw, 30vh) rotate(120deg)' },
+					'45%': { transform: 'translate(60vw, 60vh) rotate(200deg)' },
+					'60%': { transform: 'translate(10vw, 80vh) rotate(270deg)' },
+					'75%': { transform: 'translate(90vw, 50vh) rotate(320deg)' },
+					'85%': { transform: 'translate(30vw, 15vh) rotate(380deg)' },
+					'100%': { transform: 'translate(0vw, 20vh) rotate(360deg)' }
 				},
 				'fly-zigzag': {
-					'0%': { transform: 'translate(0, 0)' },
-					'20%': { transform: 'translate(80px, -30px)' },
-					'40%': { transform: 'translate(-40px, 60px)' },
-					'60%': { transform: 'translate(120px, 30px)' },
-					'80%': { transform: 'translate(-80px, -20px)' },
-					'100%': { transform: 'translate(0, 0)' }
+					'0%': { transform: 'translate(90vw, 15vh) rotate(0deg)' },
+					'20%': { transform: 'translate(70vw, 40vh) rotate(90deg)' },
+					'40%': { transform: 'translate(20vw, 25vh) rotate(180deg)' },
+					'60%': { transform: 'translate(50vw, 70vh) rotate(270deg)' },
+					'80%': { transform: 'translate(85vw, 45vh) rotate(320deg)' },
+					'100%': { transform: 'translate(90vw, 15vh) rotate(360deg)' }
+				},
+				'fly-diagonal': {
+					'0%': { transform: 'translate(10vw, 80vh) rotate(0deg)' },
+					'25%': { transform: 'translate(80vw, 20vh) rotate(90deg)' },
+					'50%': { transform: 'translate(15vw, 40vh) rotate(180deg)' },
+					'75%': { transform: 'translate(70vw, 75vh) rotate(270deg)' },
+					'100%': { transform: 'translate(10vw, 80vh) rotate(360deg)' }
+				},
+				'fly-circular': {
+					'0%': { transform: 'translate(50vw, 50vh) rotate(0deg)' },
+					'25%': { transform: 'translate(70vw, 30vh) rotate(90deg)' },
+					'50%': { transform: 'translate(50vw, 20vh) rotate(180deg)' },
+					'75%': { transform: 'translate(30vw, 30vh) rotate(270deg)' },
+					'100%': { transform: 'translate(50vw, 50vh) rotate(360deg)' }
+				},
+				'fly-random': {
+					'0%': { transform: 'translate(20vw, 90vh) rotate(0deg)' },
+					'12%': { transform: 'translate(60vw, 10vh) rotate(60deg)' },
+					'25%': { transform: 'translate(10vw, 30vh) rotate(120deg)' },
+					'40%': { transform: 'translate(85vw, 60vh) rotate(200deg)' },
+					'55%': { transform: 'translate(40vw, 85vh) rotate(250deg)' },
+					'70%': { transform: 'translate(75vw, 25vh) rotate(300deg)' },
+					'85%': { transform: 'translate(15vw, 55vh) rotate(340deg)' },
+					'100%': { transform: 'translate(20vw, 90vh) rotate(360deg)' }
 				}
 			},
 			animation: {
@@ -125,8 +152,11 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
 				'fade-in-up': 'fade-in-up 0.6s ease-out',
-				'fly-around': 'fly-around 12s ease-in-out infinite',
-				'fly-zigzag': 'fly-zigzag 8s ease-in-out infinite'
+				'fly-around': 'fly-around 15s ease-in-out infinite',
+				'fly-zigzag': 'fly-zigzag 12s ease-in-out infinite',
+				'fly-diagonal': 'fly-diagonal 18s ease-in-out infinite',
+				'fly-circular': 'fly-circular 10s ease-in-out infinite',
+				'fly-random': 'fly-random 20s ease-in-out infinite'
 			}
 		}
 	},
