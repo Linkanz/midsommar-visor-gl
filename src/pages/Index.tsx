@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { SongCard } from "@/components/SongCard";
 import { Footer } from "@/components/Footer";
+import { FlyingBee } from "@/components/FlyingBee";
 import { midsummerSongs } from "@/data/songs";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -24,7 +25,15 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-midsummer-light via-background to-midsummer-light/50">
+    <div className="min-h-screen bg-gradient-to-br from-midsummer-light via-background to-midsummer-light/50 relative overflow-hidden">
+      {/* Flying Bees */}
+      <FlyingBee className="top-20 left-10" animationDuration="10s" delay="0s" />
+      <FlyingBee className="top-40 right-20" animationDuration="14s" delay="2s" size="text-xl" />
+      <FlyingBee className="top-96 left-1/3" animationDuration="12s" delay="4s" />
+      <FlyingBee className="top-[500px] right-1/4" animationDuration="16s" delay="1s" size="text-lg" />
+      <FlyingBee className="bottom-96 left-20" animationDuration="11s" delay="6s" />
+      <FlyingBee className="bottom-40 right-10" animationDuration="13s" delay="3s" size="text-2xl" />
+      
       <Header />
       
       <main className="container mx-auto px-4 py-12">
