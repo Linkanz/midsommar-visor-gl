@@ -3,6 +3,9 @@ export interface Song {
   lyrics: string[];
   difficulty: "Lätt" | "Medel" | "Svår";
   melody?: string;
+  audioUrl?: string;
+  wordTimings?: number[]; // Timing for each word in seconds
+  duration?: number; // Total song duration in seconds
 }
 
 export const midsummerSongs: Song[] = [
@@ -19,7 +22,18 @@ export const midsummerSongs: Song[] = [
       "Sjung hopp faderallan lej"
     ],
     difficulty: "Lätt",
-    melody: "Traditionell"
+    melody: "Traditionell",
+    duration: 20,
+    wordTimings: [
+      0.5, 1.5, // Helan går
+      2.5, 3.0, 3.5, 4.0, 4.5, 5.5, // Sjung hopp faderallan lallan lej
+      6.5, 7.5, // Helan går
+      8.5, 9.0, 9.5, 10.0, 10.5, // Sjung hopp faderallan lej
+      11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, // Och den som inte helan tar
+      15.0, 15.5, 16.0, 16.5, 17.0, 17.5, // Han heller inte halvan får
+      18.0, 18.5, // Helan går
+      19.0, 19.5, 20.0, 20.5, 21.0 // Sjung hopp faderallan lej
+    ]
   },
   {
     title: "Halvan Går",

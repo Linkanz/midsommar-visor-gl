@@ -58,6 +58,9 @@ const Index = () => {
                 difficulty={song.difficulty}
                 melody={song.melody}
                 index={index + 1}
+                audioUrl={song.audioUrl}
+                wordTimings={song.wordTimings}
+                duration={song.duration}
               />
             </div>
           ))}
